@@ -1,0 +1,24 @@
+{
+  "name": "asterial",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sosopend/Asterial#readme",
+  "bugs": {
+    "url": "https://github.com/Sosopend/Asterial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sosopend/Asterial.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "1.82.0"
+  },
+  "scripts": {
+    "test": "echo",
+    "sass -c": "sass --watch ./scss/asterial.scss ./style.css"
+  }
+}
