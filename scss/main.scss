@@ -1,0 +1,286 @@
+main {
+    .image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .background {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        right: -3.125rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1200px;
+        text-align: center;
+
+        p {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            font-size: 3rem;
+        }
+    }
+
+    .section-societe {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        justify-content: space-around;
+
+        img {
+            max-width: 548px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        article {
+            width: 548px;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+                color: #16213D;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin-top: 2rem;
+
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-weight: 600;
+                    background-color: #DD4546;
+                    padding: 0.5rem 1.5rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            p:nth-of-type(3) {
+                color: #16213D;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    .section-expertise {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            color: #16213D;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 2rem;
+        }
+    }
+
+    .ingenierie {
+        display: flex;
+        background-color: #2E4480;
+
+        article {
+            color: #FFFFFF;
+            max-width: 592px;
+            margin: auto;
+
+            h3 {
+                font-size: 1.25rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            h4 {
+                text-decoration: underline;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+                margin-bottom: 2rem;
+            }
+
+            li {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .historique-projets {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            color: #16213D;
+            text-transform: uppercase;
+        }
+
+        .jump {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .projets {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            width: 325px;
+            background-color: #2E4480;
+            color: #FFFFFF;
+            border-radius: 10px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+
+            h3 {
+                font-size: 1.25rem;
+                font-weight: bold;
+                font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+
+                .uppercase {
+                    text-transform: uppercase;
+                }
+            }
+
+            h3:after {
+                content: "";
+                display: block;
+                width: 200px;
+                height: 1px;
+                background-color: #DD4546;
+                margin: 0 auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                background-color: #DD4546;
+                color: #FFFFFF;
+                font-weight: 600;
+                padding: 0.5rem 1.5rem;
+                border-radius: 1rem;
+                text-decoration: none;
+            }
+        }
+
+        section:first-of-type {
+            p:first-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+
+        section:nth-of-type(2) {
+            h3 {
+                margin-top: 1.25rem;
+            }
+
+            p:first-of-type {
+                margin-bottom: 2.875rem;
+            }
+        }
+
+        section:last-of-type {
+            p:first-of-type {
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+
+    .section-contact {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            color: #16213D;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .formulaire {
+            display: flex;
+            justify-content: space-around;
+
+            .form-section-1 {
+                width: 572px;
+
+                input {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 5px;
+                }
+
+                select {
+                    width: 100%;
+                    height: 36px;
+                    margin-bottom: 2rem;
+                    border-radius: 5px;
+                }
+            }
+
+            .form-section-2 {
+                width: 572px;
+
+                textarea {
+                    width: 100%;
+                    height: 12.8125rem;
+                    border-radius: 0.3125rem;
+                }
+            }
+        }
+
+        a {
+            color: #DD4546;
+            text-decoration: none;
+        }
+
+        .send {
+            background-color: #16213D;
+            width: 100%;
+            color: #FFFFFF;
+            font-weight: 600;
+            height: 2.25rem;
+            margin-top: 0.625rem;
+            border: none;
+            border-radius: 0.3125rem;
+        }
+    }
+}

@@ -1,3 +1,585 @@
+* {
+  margin: 0;
+  font-family: "Montserrat", serif;
+}
 
+@font-face {
+  font-family: "Arial Rounded MT Bold";
+  src: url("./fonts/ArialRoundedMTBold.woff2") format("woff2"), url("./fonts/ArialRoundedMTBold.woff") format("woff"), url("./fonts/arialroundedmtbold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header nav {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  height: 40px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  display: flex;
+}
+header nav ul li a {
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: #1E1E1E;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  color: #16213D;
+}
+
+main .image-container {
+  position: relative;
+  width: 100%;
+}
+main .background {
+  width: 100%;
+  object-fit: cover;
+}
+main .text-overlay {
+  position: absolute;
+  top: 50%;
+  right: -3.125rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  text-align: center;
+}
+main .text-overlay p {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  font-size: 3rem;
+}
+main .section-societe {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  justify-content: space-around;
+}
+main .section-societe img {
+  max-width: 548px;
+  height: auto;
+  object-fit: cover;
+}
+main .section-societe article {
+  width: 548px;
+}
+main .section-societe article h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: #16213D;
+  text-transform: uppercase;
+}
+main .section-societe article p {
+  margin-top: 2rem;
+}
+main .section-societe article p a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  background-color: #DD4546;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+main .section-societe article p:nth-of-type(3) {
+  color: #16213D;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main .section-expertise {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+main .section-expertise h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: #16213D;
+  text-transform: uppercase;
+}
+main .section-expertise p {
+  margin-top: 2rem;
+}
+main .ingenierie {
+  display: flex;
+  background-color: #2E4480;
+}
+main .ingenierie article {
+  color: #FFFFFF;
+  max-width: 592px;
+  margin: auto;
+}
+main .ingenierie article h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+main .ingenierie article p {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+main .ingenierie article h4 {
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+main .ingenierie article li {
+  font-weight: 600;
+}
+main .historique-projets {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+main .historique-projets h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: #16213D;
+  text-transform: uppercase;
+}
+main .historique-projets .jump {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .historique-projets .projets {
+  display: flex;
+  justify-content: space-between;
+}
+main .historique-projets section {
+  width: 325px;
+  background-color: #2E4480;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+main .historique-projets section h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+main .historique-projets section h3 .uppercase {
+  text-transform: uppercase;
+}
+main .historique-projets section h3:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #DD4546;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main .historique-projets section a {
+  background-color: #DD4546;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+main .historique-projets section:first-of-type p:first-of-type {
+  margin-bottom: 2rem;
+}
+main .historique-projets section:nth-of-type(2) h3 {
+  margin-top: 1.25rem;
+}
+main .historique-projets section:nth-of-type(2) p:first-of-type {
+  margin-bottom: 2.875rem;
+}
+main .historique-projets section:last-of-type p:first-of-type {
+  margin-bottom: 2rem;
+}
+main .section-contact {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+main .section-contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: #16213D;
+  text-transform: uppercase;
+}
+main .section-contact p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .section-contact .formulaire {
+  display: flex;
+  justify-content: space-around;
+}
+main .section-contact .formulaire .form-section-1 {
+  width: 572px;
+}
+main .section-contact .formulaire .form-section-1 input {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 36px;
+  border-radius: 5px;
+}
+main .section-contact .formulaire .form-section-1 select {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+main .section-contact .formulaire .form-section-2 {
+  width: 572px;
+}
+main .section-contact .formulaire .form-section-2 textarea {
+  width: 100%;
+  height: 12.8125rem;
+  border-radius: 0.3125rem;
+}
+main .section-contact a {
+  color: #DD4546;
+  text-decoration: none;
+}
+main .section-contact .send {
+  background-color: #16213D;
+  width: 100%;
+  color: #FFFFFF;
+  font-weight: 600;
+  height: 2.25rem;
+  margin-top: 0.625rem;
+  border: none;
+  border-radius: 0.3125rem;
+}
+
+footer {
+  background: linear-gradient(to right, #2E4480, #3C5DA8);
+  color: #FFFFFF;
+}
+footer .general {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  /* ajout des lignes manquantes pour padding */
+}
+footer .general .asterial {
+  max-width: 300px;
+  padding-top: 2rem;
+}
+footer .general .asterial span {
+  display: inline-block;
+  font-size: 1.9375rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+footer .general .section-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+footer .general .section-footer section {
+  display: flex;
+  flex-direction: column;
+}
+footer .general .section-footer section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+footer .general .section-footer section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .general .section-footer section ul li {
+  display: flex;
+  margin: 0.5rem 0;
+}
+footer .general .section-footer section ul li img {
+  margin-right: 1rem;
+}
+footer .general .section-footer section ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .general .section-footer section:first-of-type {
+  width: 12.5rem;
+  margin-right: 6.625rem;
+}
+footer .general .section-footer section:first-of-type li {
+  margin-bottom: 1rem;
+}
+footer .general .section-footer section:nth-of-type(2) {
+  width: 10.9375rem;
+  margin-right: 6.625rem;
+}
+footer .general .section-footer section:last-of-type {
+  width: 9.375rem;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+footer .copyright p {
+  margin: 2rem 1.25rem 0;
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  header nav img {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  header nav ul {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  header nav ul li {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul li a {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+  main .background {
+    height: 43.75rem;
+  }
+  main .section-societe {
+    display: flex;
+    max-width: 48rem;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    justify-content: space-around;
+  }
+  main .section-societe img {
+    max-width: 20.75rem;
+    height: auto;
+    object-fit: cover;
+  }
+  main .section-societe article {
+    width: 20.75rem;
+  }
+  main .section-expertise {
+    max-width: 48rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  main .section-expertise article {
+    max-width: 45.5rem;
+    margin: auto;
+  }
+  main .ingenierie {
+    max-width: 48rem;
+  }
+  main .ingenierie img {
+    max-width: 50%;
+    height: 25rem;
+    object-fit: cover;
+  }
+  main .ingenierie article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .ingenierie article p {
+    text-align: center;
+    font-weight: 500;
+  }
+  main .ingenierie article li {
+    font-weight: 500;
+  }
+  main .historique-projets {
+    max-width: 48rem;
+  }
+  main .historique-projets article {
+    max-width: 45.5rem;
+    margin: auto;
+  }
+  main .historique-projets article .projets section {
+    width: 12.5rem;
+  }
+  main .section-contact {
+    max-width: 48rem;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  main .section-contact article {
+    max-width: 45.5rem;
+    margin: auto;
+  }
+  main .section-contact article .form-section-1 {
+    width: 22.25rem !important;
+  }
+  main .section-contact article .form-section-2 {
+    width: 22.25rem !important;
+  }
+  footer .asterial {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  main .background {
+    height: 43.75rem;
+  }
+  main .section-societe {
+    flex-direction: column;
+    max-width: 31.25rem;
+  }
+  main .section-societe article {
+    width: 28.6875rem;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  main .section-societe img {
+    max-width: 28.6875rem;
+    height: 37.375rem;
+    margin: auto;
+  }
+  main .section-expertise {
+    max-width: 31.25rem;
+  }
+  main .section-expertise article {
+    max-width: 28.6875rem;
+    margin: auto;
+  }
+  main .ingenierie {
+    max-width: 31.25rem;
+    flex-direction: column;
+  }
+  main .ingenierie img {
+    max-width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+  main .ingenierie article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 1.25rem;
+  }
+  main .ingenierie article p {
+    text-align: center;
+    font-weight: 500;
+  }
+  main .ingenierie article li {
+    font-weight: 500;
+  }
+  main .historique-projets {
+    max-width: 31.25rem;
+  }
+  main .historique-projets article {
+    max-width: 28.6875rem;
+    margin: auto;
+  }
+  main .historique-projets .projets {
+    display: flex;
+    flex-direction: column;
+    max-width: 28.6875rem;
+    margin: auto;
+  }
+  main .historique-projets .projets section {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 28.6875rem;
+  }
+  main .section-contact {
+    max-width: 31.25rem;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  main .section-contact article {
+    max-width: 28.6875rem;
+    margin: auto;
+  }
+  main .section-contact .formulaire {
+    display: flex;
+    flex-direction: column;
+    max-width: 28.6875rem;
+    margin: auto;
+  }
+  footer .general {
+    flex-direction: column;
+    max-width: 31.25rem;
+    margin: auto;
+  }
+  footer .asterial {
+    display: flex;
+    flex-direction: column;
+    width: 28.6875rem;
+    margin: auto;
+  }
+  footer .asterial div {
+    margin: auto;
+  }
+  footer .asterial img {
+    width: 1.125rem;
+    height: 1.375rem;
+  }
+  footer .section-footer {
+    display: flex;
+    flex-direction: column;
+    width: 28.6875rem;
+    margin: auto;
+  }
+  footer .section-footer section {
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

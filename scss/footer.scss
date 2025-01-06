@@ -1,0 +1,90 @@
+footer {
+    background: linear-gradient(to right, #2E4480, #3C5DA8);
+    color: #FFFFFF;
+
+    .general {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        /* ajout des lignes manquantes pour padding */
+
+        .asterial {
+            max-width: 300px;
+            padding-top: 2rem;
+
+            span {
+                display: inline-block;
+                font-size: 1.9375rem;
+                font-weight: bold;
+                font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .section-footer {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+
+            section {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        display: flex;
+                        margin: 0.5rem 0;
+
+                        img {
+                            margin-right: 1rem;
+                        }
+
+                        a {
+                            color: #FFFFFF;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            section:first-of-type {
+                width: 12.5rem;
+                margin-right: 6.625rem;
+
+                li {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            section:nth-of-type(2) {
+                width: 10.9375rem;
+                margin-right: 6.625rem;
+            }
+
+            section:last-of-type {
+                width: 9.375rem;
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        border-top: 0.0625rem solid #FFFFFF;
+
+        p {
+            margin: 2rem 1.25rem 0;
+            padding-bottom: 1.25rem;
+        }
+    }
+}

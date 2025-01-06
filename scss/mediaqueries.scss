@@ -1,0 +1,293 @@
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+
+            img {
+                margin-bottom: 1rem;
+                max-width: 100%;
+            }
+
+            ul {
+                align-items: center;
+                padding: 0;
+                width: 100%;
+                margin: 0;
+
+                li {
+                    margin: 0.5rem 0;
+                    width: 100%;
+                    text-align: center;
+
+                    a {
+                        padding: 0.75rem 1rem;
+                        font-size: 0.875rem;
+                        width: 100%;
+                        display: block;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .background {
+            height: 43.75rem;
+        }
+
+        .section-societe {
+            display: flex;
+            max-width: 48rem;
+            margin: auto;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+            justify-content: space-around;
+
+            img {
+                max-width: 20.75rem;
+                height: auto;
+                object-fit: cover;
+            }
+
+            article {
+                width: 20.75rem;
+            }
+        }
+
+        .section-expertise {
+            max-width: 48rem;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+            article {
+                max-width: 45.5rem;
+                margin: auto;
+            }
+        }
+
+        .ingenierie {
+            max-width: 48rem;
+
+            img {
+                max-width: 50%;
+                height: 25rem;
+                object-fit: cover;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                }
+
+                li {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .historique-projets {
+            max-width: 48rem;
+
+            article {
+                max-width: 45.5rem;
+                margin: auto;
+
+                .projets {
+                    section {
+                        width: 12.5rem;
+                    }
+                }
+            }
+        }
+
+        .section-contact {
+            max-width: 48rem;
+            margin: auto;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+            article {
+                max-width: 45.5rem;
+                margin: auto;
+
+                .form-section-1 {
+                    width: 22.25rem !important;
+                }
+
+                .form-section-2 {
+                    width: 22.25rem !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        .asterial {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    header {
+        nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    main {
+        .background {
+            height: 43.75rem;
+        }
+
+        .section-societe {
+            flex-direction: column;
+            max-width: 31.25rem;
+
+            article {
+                width: 28.6875rem;
+                margin: auto;
+                margin-bottom: 4rem;
+            }
+
+            img {
+                max-width: 28.6875rem;
+                height: 37.375rem;
+                margin: auto;
+            }
+        }
+
+        .section-expertise {
+            max-width: 31.25rem;
+
+            article {
+                max-width: 28.6875rem;
+                margin: auto;
+            }
+        }
+
+        .ingenierie {
+            max-width: 31.25rem;
+            flex-direction: column;
+
+            img {
+                max-width: 100%;
+                height: 25rem;
+                object-fit: cover;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 4rem 1.25rem;
+
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                }
+
+                li {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .historique-projets {
+            max-width: 31.25rem;
+
+            article {
+                max-width: 28.6875rem;
+                margin: auto;
+            }
+
+            .projets {
+                display: flex;
+                flex-direction: column;
+                max-width: 28.6875rem;
+                margin: auto;
+
+                section {
+                    margin: auto;
+                    margin-bottom: 1rem;
+                    width: 28.6875rem;
+                }
+            }
+        }
+
+        .section-contact {
+            max-width: 31.25rem;
+            margin: auto;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+            article {
+                max-width: 28.6875rem;
+                margin: auto;
+            }
+
+            .formulaire {
+                display: flex;
+                flex-direction: column;
+                max-width: 28.6875rem;
+                margin: auto;
+            }
+        }
+    }
+
+    footer {
+        .general {
+            flex-direction: column;
+            max-width: 31.25rem;
+            margin: auto;
+        }
+
+        .asterial {
+            display: flex;
+            flex-direction: column;
+            width: 28.6875rem;
+            margin: auto;
+
+            div {
+                margin: auto;
+            }
+
+            img {
+                width: 1.125rem;
+                height: 1.375rem;
+            }
+        }
+
+        .section-footer {
+            display: flex;
+            flex-direction: column;
+            width: 28.6875rem;
+            margin: auto;
+
+            section {
+                margin: auto;
+            }
+        }
+    }
+}
