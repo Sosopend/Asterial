@@ -50,6 +50,7 @@ main .image-container {
 main .background {
   width: 100%;
   object-fit: cover;
+  height: 700px;
 }
 main .text-overlay {
   position: absolute;
@@ -60,7 +61,7 @@ main .text-overlay {
   max-width: 1200px;
   text-align: center;
 }
-main .text-overlay p {
+main .text-overlay h1 {
   color: #FFFFFF;
   font-weight: bold;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
@@ -323,6 +324,10 @@ footer .general .section-footer section ul li {
 }
 footer .general .section-footer section ul li img {
   margin-right: 1rem;
+}
+footer .general .section-footer section ul li .loc {
+  height: 24px;
+  width: 15px;
 }
 footer .general .section-footer section ul li a {
   color: #FFFFFF;
