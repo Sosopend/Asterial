@@ -33,16 +33,16 @@ main {
         margin: auto;
         margin-top: 6rem;
         margin-bottom: 6rem;
-        justify-content: space-around;
 
         img {
-            max-width: 548px;
-            height: auto;
+            width: 50%;
+            height: 700px;
             object-fit: cover;
         }
 
         article {
-            width: 548px;
+            width: 50%;
+            margin-right: 2rem;
 
             h2 {
                 font-size: 2rem;
@@ -56,6 +56,8 @@ main {
                 margin-top: 2rem;
 
                 a {
+                    display: block;             
+                    width: fit-content;
                     text-decoration: none;
                     color: #FFFFFF;
                     font-weight: 600;
@@ -98,15 +100,17 @@ main {
         background-color: #2E4480;
 
         img {
-            height: 400px;
+            max-height: 400px;
             object-fit: cover;
             width: 50%;
         }
 
         article {
             color: #FFFFFF;
-            max-width: 592px;
+            width: 50%;
             margin: auto;
+            margin-right: 4rem;
+            margin-left: 4rem;
 
             h3 {
                 font-size: 1.25rem;
@@ -180,7 +184,7 @@ main {
             h3:after {
                 content: "";
                 display: block;
-                width: 200px;
+                width: 70%;
                 height: 1px;
                 background-color: #DD4546;
                 margin: 0 auto;
@@ -189,6 +193,10 @@ main {
             }
 
             a {
+                display: block;             
+                width: fit-content;
+                margin-right: auto;
+                margin-left: auto;
                 background-color: #DD4546;
                 color: #FFFFFF;
                 font-weight: 600;
@@ -246,30 +254,36 @@ main {
             justify-content: space-around;
 
             .form-section-1 {
-                width: 572px;
+                width: 50%;
+                margin-right: 2rem;
 
                 input {
                     margin-bottom: 1rem;
                     width: 100%;
-                    height: 36px;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                     border-radius: 5px;
+                    border: solid 1px #6F768A;
                 }
 
                 select {
                     width: 100%;
-                    height: 36px;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
                     margin-bottom: 2rem;
                     border-radius: 5px;
+                    border: solid 1px #6F768A;
                 }
             }
 
             .form-section-2 {
-                width: 572px;
+                width: 50%;
 
                 textarea {
                     width: 100%;
-                    height: 12.8125rem;
+                    padding-bottom: 13.4375rem;
                     border-radius: 0.3125rem;
+                    border: solid 1px #6F768A;
                 }
             }
         }
@@ -284,7 +298,8 @@ main {
             width: 100%;
             color: #FFFFFF;
             font-weight: 600;
-            height: 2.25rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             margin-top: 0.625rem;
             border: none;
             border-radius: 0.3125rem;

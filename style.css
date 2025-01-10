@@ -23,7 +23,7 @@ header nav {
   align-items: center;
 }
 header nav img {
-  height: 40px;
+  max-height: 40px;
 }
 header nav ul {
   display: flex;
@@ -73,15 +73,15 @@ main .section-societe {
   margin: auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
-  justify-content: space-around;
 }
 main .section-societe img {
-  max-width: 548px;
-  height: auto;
+  width: 50%;
+  height: 700px;
   object-fit: cover;
 }
 main .section-societe article {
-  width: 548px;
+  width: 50%;
+  margin-right: 2rem;
 }
 main .section-societe article h2 {
   font-size: 2rem;
@@ -94,6 +94,8 @@ main .section-societe article p {
   margin-top: 2rem;
 }
 main .section-societe article p a {
+  display: block;
+  width: fit-content;
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 600;
@@ -127,14 +129,16 @@ main .ingenierie {
   background-color: #2E4480;
 }
 main .ingenierie img {
-  height: 400px;
+  max-height: 400px;
   object-fit: cover;
   width: 50%;
 }
 main .ingenierie article {
   color: #FFFFFF;
-  max-width: 592px;
+  width: 50%;
   margin: auto;
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 main .ingenierie article h3 {
   font-size: 1.25rem;
@@ -197,7 +201,7 @@ main .historique-projets section h3 .uppercase {
 main .historique-projets section h3:after {
   content: "";
   display: block;
-  width: 200px;
+  width: 70%;
   height: 1px;
   background-color: #DD4546;
   margin: 0 auto;
@@ -205,6 +209,10 @@ main .historique-projets section h3:after {
   margin-bottom: 1rem;
 }
 main .historique-projets section a {
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #DD4546;
   color: #FFFFFF;
   font-weight: 600;
@@ -246,27 +254,33 @@ main .section-contact .formulaire {
   justify-content: space-around;
 }
 main .section-contact .formulaire .form-section-1 {
-  width: 572px;
+  width: 50%;
+  margin-right: 2rem;
 }
 main .section-contact .formulaire .form-section-1 input {
   margin-bottom: 1rem;
   width: 100%;
-  height: 36px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 5px;
+  border: solid 1px #6F768A;
 }
 main .section-contact .formulaire .form-section-1 select {
   width: 100%;
-  height: 36px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-radius: 5px;
+  border: solid 1px #6F768A;
 }
 main .section-contact .formulaire .form-section-2 {
-  width: 572px;
+  width: 50%;
 }
 main .section-contact .formulaire .form-section-2 textarea {
   width: 100%;
-  height: 12.8125rem;
+  padding-bottom: 13.4375rem;
   border-radius: 0.3125rem;
+  border: solid 1px #6F768A;
 }
 main .section-contact a {
   color: #DD4546;
@@ -277,7 +291,8 @@ main .section-contact .send {
   width: 100%;
   color: #FFFFFF;
   font-weight: 600;
-  height: 2.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-top: 0.625rem;
   border: none;
   border-radius: 0.3125rem;
@@ -331,31 +346,31 @@ footer .general .section-footer section ul li img {
   margin-right: 1rem;
 }
 footer .general .section-footer section ul li .loc {
-  height: 24px;
-  width: 15px;
+  max-height: 24px;
+  max-width: 15px;
 }
 footer .general .section-footer section ul li a {
   color: #FFFFFF;
   text-decoration: none;
 }
 footer .general .section-footer section:first-of-type {
-  width: 12.5rem;
+  width: 200px;
   margin-right: 6.625rem;
 }
 footer .general .section-footer section:first-of-type li {
   margin-bottom: 1rem;
 }
 footer .general .section-footer section:nth-of-type(2) {
-  width: 10.9375rem;
+  width: 175px;
   margin-right: 6.625rem;
 }
 footer .general .section-footer section:last-of-type {
-  width: 9.375rem;
+  width: 150px;
 }
 footer .copyright {
   display: flex;
   justify-content: center;
-  border-top: 0.0625rem solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
 }
 footer .copyright p {
   margin: 2rem 1.25rem 0;
@@ -381,7 +396,6 @@ footer .copyright p {
   }
   header nav img {
     margin-bottom: 1rem;
-    max-width: 100%;
   }
   header nav ul {
     align-items: center;
@@ -400,9 +414,6 @@ footer .copyright p {
     width: 100%;
     display: block;
     box-sizing: border-box;
-  }
-  main .background {
-    height: 43.75rem;
   }
   main .section-societe {
     display: flex;

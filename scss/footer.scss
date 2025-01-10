@@ -50,8 +50,8 @@ footer {
                         }
 
                         .loc {
-                            height: 24px;
-                            width: 15px;
+                            max-height: 24px;
+                            max-width: 15px;
                         }
 
                         a {
@@ -63,7 +63,7 @@ footer {
             }
 
             section:first-of-type {
-                width: 12.5rem;
+                width: 200px;
                 margin-right: 6.625rem;
 
                 li {
@@ -72,12 +72,12 @@ footer {
             }
 
             section:nth-of-type(2) {
-                width: 10.9375rem;
+                width: 175px;
                 margin-right: 6.625rem;
             }
 
             section:last-of-type {
-                width: 9.375rem;
+                width: 150px;
             }
         }
     }
@@ -85,7 +85,7 @@ footer {
     .copyright {
         display: flex;
         justify-content: center;
-        border-top: 0.0625rem solid #FFFFFF;
+        border-top: 1px solid #FFFFFF;
 
         p {
             margin: 2rem 1.25rem 0;
