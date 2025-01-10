@@ -126,6 +126,11 @@ main .ingenierie {
   display: flex;
   background-color: #2E4480;
 }
+main .ingenierie img {
+  height: 400px;
+  object-fit: cover;
+  width: 50%;
+}
 main .ingenierie article {
   color: #FFFFFF;
   max-width: 592px;
